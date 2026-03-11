@@ -8,13 +8,6 @@ If your first question on a BTC market page is "what is spot doing right now?", 
 
 ![BTC Pulse Overlay screenshot](screenshot.png)
 
-## Why people will share it
-
-- It is useful in under a minute.
-- It adds live context without changing trading behavior on the page.
-- It is clean enough to screenshot and obvious enough to understand at a glance.
-- It stays read-only by design.
-
 ## What it shows
 
 - Live Binance BTC/USDT reference price
