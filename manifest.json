@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "BTC Pulse Overlay",
+  "version": "1.0.0",
+  "description": "Read-only Binance BTC/USDT reference price, flow, and liquidity overlay for compatible Polymarket pages.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://polymarket.com/*",
+        "https://www.polymarket.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

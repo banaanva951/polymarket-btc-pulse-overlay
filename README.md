@@ -1,0 +1,79 @@
+# BTC Pulse Overlay
+
+Fast BTC context. Zero trade calls.
+
+BTC Pulse Overlay is a read-only browser extension that adds a live Binance BTC/USDT reference panel directly into compatible Polymarket price pages. It surfaces price, latency, short-term flow, and liquidity in the place people already look, without placing orders, clicking buttons, or telling anyone what to trade.
+
+If your first question on a BTC market page is "what is spot doing right now?", this extension answers it immediately.
+
+![BTC Pulse Overlay screenshot](screenshot.png)
+
+## Why people will share it
+
+- It is useful in under a minute.
+- It adds live context without changing trading behavior on the page.
+- It is clean enough to screenshot and obvious enough to understand at a glance.
+- It stays read-only by design.
+
+## What it shows
+
+- Live Binance BTC/USDT reference price
+- WebSocket latency to the latest trade print
+- Short-term aggressor flow bias
+- Lightweight liquidity context from depth, spread, and recent flow
+
+## What it does not do
+
+- Place trades
+- Click buttons
+- Automate the site
+- Emit entry or exit instructions
+- Claim affiliation with Polymarket or Binance
+
+## Compatible pages
+
+The current version is tuned for BTC price markets where a visible `Price to beat` row exists on the page.
+
+## Install
+
+1. Clone or download this repo.
+2. Open `chrome://extensions` in a Chromium-based browser.
+3. Enable `Developer mode`.
+4. Click `Load unpacked`.
+5. Select this folder.
+6. Open a compatible Polymarket BTC price page.
+
+## Local development
+
+There is no build step.
+
+1. Edit [`content.js`](content.js) or [`manifest.json`](manifest.json).
+2. Reload the extension from `chrome://extensions`.
+3. Refresh the target page.
+
+## Design guardrails
+
+This project should remain:
+
+- Read-only
+- Small and understandable
+- Easy to audit
+- Respectful of the platform it runs on
+
+Changes that introduce order placement, automation, account actions, or "you should trade this now" style guidance are out of scope for the public repo.
+
+## Contributing
+
+Bug reports, UI fixes, compatibility improvements, and observability ideas are welcome. Start with [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+## Security
+
+Please report vulnerabilities privately as described in [`SECURITY.md`](SECURITY.md).
+
+## License
+
+MIT. See [`LICENSE`](LICENSE).
+
+## Disclaimer
+
+This is an unofficial community project. It is not affiliated with, endorsed by, or sponsored by Polymarket or Binance. Users are responsible for complying with the terms, laws, and rules that apply to their own use.
